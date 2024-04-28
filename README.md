@@ -33,7 +33,7 @@ The project was carried out in two distinct phases:
 
 #### Evaluation
 
-- Standard NMT metrics: BLEU, METEOR, TER scores.
+- Standard NMT metrics: BLEU, ROUGE, BERT scores.
 - Qualitative analysis of sample translation outputs.
 
 ## Results and Analysis
