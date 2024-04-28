@@ -2,6 +2,18 @@
 
 This repository presents an implementation of BERT-Fused Neural Machine Translation (NMT) model tailored for low-resource language pairs, with a specific focus on the English-Marathi translation task.
 
+If you find this work helpful in your research, please cite the original reasearch as:
+
+@inproceedings{
+Zhu2020Incorporating,
+title={Incorporating BERT into Neural Machine Translation},
+author={Jinhua Zhu and Yingce Xia and Lijun Wu and Di He and Tao Qin and Wengang Zhou and Houqiang Li and Tieyan Liu},
+booktitle={International Conference on Learning Representations},
+year={2020},
+url={https://openreview.net/forum?id=Hyl7ygStwB}
+}
+
+
 ## Motivation
 
 - Address the disparity in NMT advancements, which have primarily focused on high-resource languages, leaving behind low-resource languages like Marathi.
@@ -45,7 +57,7 @@ The project was carried out in two distinct phases:
 
 ## Limitations and Future Work
 
-- **Data Availability**: Sourced data from alternative sources (e.g., CMU archives) due to unavailability of anticipated dataset.
+- **Data Availability**: Sourced data from alternative source (http://www.cs.cmu.edu/~pengchey/iwslt2014_ende.zip) due to unavailability of anticipated dataset.
 - **Library Compatibility**: Addressed incompatibilities with CUDA and PyTorch versions through targeted modifications.
 - **Computational Resources**: Scaled down the amount of training data to manage limited computational resources.
 - **Corpus Integrity**: Performed extensive sanity checks and manual curation to ensure data quality.
@@ -59,8 +71,9 @@ Future improvements:
 
 ### Requirements
 
-- PyTorch version 1.0.0/1.1.0
-- Python version >= 3.5
+- PyTorch version == 1.5.0
+- Python version == 3.6
+- huggingface/transformers version == 3.5.0
 
 ### Steps
 
@@ -121,4 +134,4 @@ Contributions are welcome! If you encounter any issues or have suggestions, plea
 
 ## Acknowledgments
 
-We express our gratitude to the authors of the original paper, Zhu et al., for their groundbreaking work, and to the AI4Bharat initiative for providing valuable resources for Indian languages.
+I express my gratitude to the authors of the original paper, Zhu et al., for their groundbreaking work, and to the AI4Bharat initiative for providing valuable resources for Indian languages.
